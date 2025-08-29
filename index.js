@@ -18,6 +18,7 @@ const only_digits = /^[+-]?\d+$/;
 const only_alpha = /^[A-Za-z]+$/;
 
 const process_data = (data) => {
+    console.log("working")
   const even_numbers = [];
   const odd_numbers = [];
   const alphabets = [];
@@ -115,7 +116,7 @@ app.post("/bfhl", (req, res) => {
   }
 });
 
-const port = 3000;
+const port = 4444;
 app.listen(port, () => {
   console.log(`API listening on :${port}`);
 });
